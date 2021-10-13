@@ -1,8 +1,17 @@
-Background and dependencies:
+# Analysis of manifold structure in head direction data (SPUD)
+
+Code to characterize manifolds and perform unsupervised decoding in the head direction system, as described in the study of Chaudhuri et al. (2019).
+Further details are in the readme.txt file. Code may be used freely. Please cite the associated paper if you use this code.
+
+
+R. Chaudhuri, B. Gercek*, B. Pandey*, A. Peyrache, I.R. Fiete. [The intrinsic population dynamics of a canonical cognitive circuit. Nature Neurosci. (2019)](https://www.nature.com/articles/s41593-019-0460-x).
+
+
+## Background and dependencies:
 
 This code contains a set of functions to carry out SPUD decoding on the data from the study of Peyrache et al. (2015). Scripts are written in Python 2.7 (but should work in Python 3 after modifying a few print statements). The primary packages used are typically part of a standard install (numpy, scipy, matplotlib, scikit-learn) and can be installed, for example, using the Anaconda Distribution. The scripts to compute persistent homology on the data call Ripser, which can be installed from https://pypi.org/project/ripser/.
 
-Instructions for use:
+## Instructions for use:
 
 1) Download the Peyrache et al. (2015) data set from CRCNS (https://crcns.org/data-sets/thalamus/th-1). The session we're using for illustration is Mouse28-140313, so to get started you could just download the zipped file corresponding to that session. Make sure that the unzipped directory contains the list of measured angles in addition to the spike timing and state files. These angle files are of the form Mouse28-140313.ang. For some of the sessions on CRCNS the angle files are already in the directory with the spike information; for others the .ang files are present in a separate zipped file that's also available for download and the relevant angle files can be copied to the appropriate directory.
 
